@@ -1,0 +1,11 @@
+{
+    "userId" : "{{randomValue length=6 type='NUMERIC'}}",
+	"firstName" : "{{{pickRandom 'Steven' 'Tim' 'Mitchel' 'Pat'}}}",
+	"lastName" : "{{{pickRandom 'Smith' 'Paine' 'Starc' 'Cummins'}}}",
+	"city" : "{{{pickRandom 'Amsterdam' 'Rotterdam'}}}",
+	"country" : "NL",
+	"zip/postalcode" : "{{randomValue length=5 type='NUMERIC'}}",
+	"userAddedDate" : "{{now timezone='America/Chicago' format='yyyy-MM-dd'}}",
+	"UUID" : "{{randomValue type='UUID'}}",
+	"sysmessage" : "User Added Successfully"
+}

@@ -1,0 +1,10 @@
+{
+    "userId" : "{{request.query.id}}",
+	"email" : "{{request.query.id}}@example.com",
+	"firstName" : "{{{pickRandom 'Steven' 'Tim' 'Mitchel' 'Pat'}}}",
+	"lastName" : "{{{pickRandom 'Smith' 'Paine' 'Starc' 'Cummins'}}}",
+	"city" : "{{{pickRandom 'Amsterdam' 'Rotterdam'}}}",
+	"country" : "NL",
+	"zip/postalcode" : "{{randomValue length=5 type='NUMERIC'}}",
+	"lastloggedInDate" : "{{now offset='-22 hours' timezone='America/Chicago' format='yyyy-MM-dd'}}"
+}
